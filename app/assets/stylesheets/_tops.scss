@@ -1,0 +1,105 @@
+.news {
+  height: 300px;
+  width: 700px;
+  margin: 20px;
+  padding: 10px;
+  background-color: green;
+  &__info {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  &__title {
+    margin: 0 0 10px 10px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+}
+
+.title {
+  margin: 0 0 10px 20px;
+  &__dear-wack {
+    height: 110px;
+    font-size: 100px;
+    font-family: fantasy;
+    text-decoration: line-through;
+  }
+  &__official-website {
+    font-size: 30px;
+    font-family: fantasy;
+  }
+}
+
+.menu {
+  width: 100vw;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
+  &__sns {
+    @include display-center;
+    @include menu-style
+  }
+  &__live {
+    @include display-center;
+    @include menu-style
+  }
+  &__youtube {
+    @include display-center;
+    @include menu-style
+  }
+  &__profile {
+    @include display-center;
+    @include menu-style
+  }
+}
+
+.photos {
+  height: 200px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  .photo1 {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+  }
+  .photo2 {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+  }
+  .photo3 {
+    height: 200px;
+    width: 200px;
+    background-color: darkmagenta;
+  }
+  .photo4 {
+    height: 200px;
+    width: 200px;
+    background-color: skyblue;
+  }
+  .photo5 {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+  }
+  .photo6 {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+  }
+  .photo7 {
+    height: 200px;
+    width: 200px;
+    background-color: goldenrod;
+  }
+  .photo8 {
+    height: 200px;
+    width: 200px;
+    background-color: chocolate
+  }
+  .photo9 {
+    height: 200px;
+    width: 200px;
+    background-color: slateblue;
+  }
+}
