@@ -30,25 +30,73 @@
 }
 
 .menu {
+  height: 200px;
   width: 100vw;
-  margin-bottom: 150px;
   display: flex;
   justify-content: space-around;
+  &__know {
+    height: 40px;
+    &__title {
+      @include display-center;
+      @include menu-style;
+      cursor: pointer;
+    }
+    &__list {
+      margin: 2px 0;
+      @include menu-style;
+      text-align: center;
+      display: none;
+      font-size: 15px;
+      line-height: 40px;
+    }
+  }
   &__sns {
-    @include display-center;
-    @include menu-style
+    height: 40px;
+    &__title {
+      @include display-center;
+      @include menu-style;
+      cursor: pointer;
+    }
+    &__list {
+      margin: 2px 0;
+      @include menu-style;
+      text-align: center;
+      display: none;
+      font-size: 15px;
+      line-height: 40px;
+    }
   }
   &__live {
-    @include display-center;
-    @include menu-style
+    height: 40px;
+    &__title {
+      @include display-center;
+      @include menu-style;
+      cursor: pointer;
+    }
+    &__list {
+      margin: 2px 0;
+      @include menu-style;
+      text-align: center;
+      display: none;
+      font-size: 15px;
+      line-height: 40px;
+    }
   }
   &__youtube {
-    @include display-center;
-    @include menu-style
-  }
-  &__profile {
-    @include display-center;
-    @include menu-style
+    height: 40px;
+    &__title {
+      @include display-center;
+      @include menu-style;
+      cursor: pointer;
+    }
+    &__list {
+      margin: 2px 0;
+      @include menu-style;
+      text-align: center;
+      display: none;
+      font-size: 15px;
+      line-height: 40px;
+    }
   }
 }
 
