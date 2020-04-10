@@ -1,12 +1,15 @@
 .top_page {
-  background-color: black;
-  color: orange;
+  height: 1600px;
+  background-image: image-url("smoke.jpg");
+  background-size: cover;
+  background-position:center;
+  color: orangered;
   font-family: Georgia, 'Times New Roman', Times, serif;
   .news {
     height: 300px;
     width: 700px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 30px;
     text-shadow: 0 0 3px white;
     color: white;
     &__info {
@@ -21,7 +24,8 @@
   }
 
   .title {
-    margin: 0 0 10px 20px;
+    text-shadow: 0 0 2px gray;
+    margin: 0 0 50px 20px;
     &__dear-wack {
       height: 110px;
       font-size: 40px;
@@ -35,13 +39,12 @@
       // font-family: fantasy;
     }
   }
-
   .menu {
     height: 200px;
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    a { color: orange;}
+    a { color: orangered;}
     &__know {
       height: 40px;
       &__title {
@@ -109,54 +112,15 @@
   }
 
   .photos {
-    height: 200px;
-    width: 600px;
     margin: auto;
     display: flex;
-    .photo1 {
-      height: 200px;
-      width: 200px;
-      background-color: greenyellow;
-    }
-    .photo2 {
-      height: 200px;
-      width: 200px;
-      background-color: brown;
-    }
-    .photo3 {
-      height: 200px;
-      width: 200px;
-      background-color: darkmagenta;
-    }
-    .photo4 {
-      height: 200px;
-      width: 200px;
-      background-color: skyblue;
-    }
-    .photo5 {
-      height: 200px;
-      width: 200px;
-      background-color: aqua;
-    }
-    .photo6 {
-      height: 200px;
-      width: 200px;
-      background-color: palevioletred;
-    }
-    .photo7 {
-      height: 200px;
-      width: 200px;
-      background-color: goldenrod;
-    }
-    .photo8 {
-      height: 200px;
-      width: 200px;
-      background-color: chocolate
-    }
-    .photo9 {
-      height: 200px;
-      width: 200px;
-      background-color: slateblue;
+    justify-content: center;
+    .photo {
+      height: 250px;
+      width: 250px;
+      margin: 5px;
+      border: solid 1px black;
+      background-color: teal;
     }
   }
 }
