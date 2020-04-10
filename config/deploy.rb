@@ -1,4 +1,4 @@
-lock '3.12.0'
+lock '3.13.0'
 
 set :application, 'dear_wack_hp'
 
