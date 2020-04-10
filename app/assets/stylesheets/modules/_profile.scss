@@ -1,0 +1,16 @@
+.profile {
+  height: 1000px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: orangered;
+  padding: 40px;
+  background-image: image-url("smoke.jpg");
+  background-position: center;
+  background-size: cover;
+  &__title {
+    height: 120px;
+    text-shadow: 0 0 2px gray;
+    display: flex;
+    font-size: 110px;
+    text-decoration: line-through;
+  }
+}

@@ -16,7 +16,10 @@
   .menu
     .menu__know
       .menu__know__title Know
-      .menu__know__list Profile
+      .menu__know__list
+        -# = link_to profile_tops_path do
+        = link_to "#" do
+          Profile
       .menu__know__list Interview
       .menu__know__list Roots
     .menu__sns
@@ -42,15 +45,15 @@
       Pictures
       %span{class: "fas fa-sort-down"}
     .photos__box
-      .photo
-      .photo
-      .photo
+      = image_tag "1.JPG", size: "100x100", alt: "test", class: "photo"
+      = image_tag "2.JPG", size: "100x100", alt: "test", class: "photo"
+      = image_tag "3.JPG", size: "100x100", alt: "test", class: "photo"
     .photos__box
-      .photo
-      .photo
-      .photo
+      = image_tag "4.JPG", size: "100x100", alt: "test", class: "photo"
+      = image_tag "5.JPG", size: "100x100", alt: "test", class: "photo"
+      = image_tag "6.JPG", size: "100x100", alt: "test", class: "photo"
     .photos__box
-      .photo
-      .photo
-      .photo
+      = image_tag "7.JPG", size: "100x100", alt: "test", class: "photo"
+      = image_tag "8.jpg", size: "100x100", alt: "test", class: "photo"
+      = image_tag "9.JPG", size: "100x100", alt: "test", class: "photo"
 = render 'layouts/footer'
