@@ -10,7 +10,7 @@
     a { color: orangered;}
     &__icon {
       margin: 40px 20px;
-      font-size: 23px;
+      font-size: 40px;
     }
   }
   &__official {
@@ -21,9 +21,5 @@
     justify-content: center;
     background-color: orangered;
     margin-bottom: 30px;
-    span {
-      font-size: 18px;
-      margin: 2.4px 5px 0 0;
-    }
   }
 }
