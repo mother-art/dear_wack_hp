@@ -5,7 +5,8 @@
 }
 
 @mixin menu-style {
-  border: solid 1px orangered;
+  border: solid 2px orangered;
   height: 40px;
   width: 150px;
+  font-weight: bold;
 }
