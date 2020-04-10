@@ -1,20 +1,20 @@
 .top_page {
+  background-color: black;
+  color: orange;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   .news {
     height: 300px;
     width: 700px;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 10px;
-    background-image: image-url("smoke.jpg");
-    background-size: cover;
-    background-position:center;
-    text-shadow: 0 0 4px white;
+    text-shadow: 0 0 3px white;
     color: white;
     &__info {
       font-size: 13px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     &__title {
-      margin: 0 0 13px 10px;
+      margin: 0 0 12px 10px;
       font-size: 16px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
@@ -24,13 +24,15 @@
     margin: 0 0 10px 20px;
     &__dear-wack {
       height: 110px;
+      font-size: 40px;
+      display: flex;
+      // font-family: fantasy;
       font-size: 100px;
-      font-family: fantasy;
       text-decoration: line-through;
     }
     &__official-website {
       font-size: 30px;
-      font-family: fantasy;
+      // font-family: fantasy;
     }
   }
 
@@ -39,6 +41,7 @@
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    a { color: orange;}
     &__know {
       height: 40px;
       &__title {
