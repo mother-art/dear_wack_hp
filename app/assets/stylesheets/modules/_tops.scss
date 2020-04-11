@@ -131,6 +131,13 @@
         background-size: cover;
         background-position: top;
       }
+      .photo:hover {
+        height: 300px;
+        width: 300px;
+        margin: -20px;
+        transition: all 300ms 0s ease;
+        z-index: 2;
+      }
     }
   }
 }
