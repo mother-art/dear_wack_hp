@@ -126,10 +126,8 @@
         height: 250px;
         width: 250px;
         margin: 5px;
-        border: solid 1px black;
-        background-color: teal;
-        background-size: cover;
-        background-position: top;
+        border-top: solid 0.8px rgb(176, 176, 176);
+        border-left: solid 0.8px rgb(232, 232, 232);
       }
       .photo:hover {
         height: 300px;
