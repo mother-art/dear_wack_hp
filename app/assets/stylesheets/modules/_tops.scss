@@ -1,11 +1,21 @@
 .top_page {
   height: 2000px;
-  width: calc(100% + 100px);
-  background-image: image-url("smoke.jpg");
-  background-size: cover;
-  background-position:center;
+  background-color: black;
   color: orangered;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: fadein-page;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  @keyframes fadein-page {
+    0% { opacity: 0;}
+    20% { opacity: 0.8;}
+    100% {
+      opacity: 1;
+      background-image: image-url("smoke.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
   .news {
     height: 400px;
     width: 800px;
@@ -27,13 +37,36 @@
   .title {
     text-shadow: 0 0 2px gray;
     margin: 30px 0 50px 50px;
+    animation-name: fadein-title;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    @keyframes fadein-title {
+      0% {
+        opacity: 0;
+        background-color: none;
+      }
+      100% {
+        opacity: 1;
+        background-image: image-url("smoke.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
     &__dear-wack {
       height: 120px;
+      padding-left: 15px;
       display: flex;
       font-size: 110px;
-      text-decoration: line-through;
+      animation-name: flashing;
+      animation-duration: 5s;
+      @keyframes flashing {
+        0% { opacity: 1;}
+        50% { opacity: 0.7;} 
+        100% { opacity: 1; }
+      }
     }
     &__official-website {
+      padding-left: 15px;
       font-size: 35px;
     }
   }
@@ -121,10 +154,13 @@
       text-shadow: 0 0 3px grey;
     }
     &__box {
+      height: 240px;
+      width: 720px;
+      background: rgba(255, 255, 255, 0.3);
       display: flex;
       .photo {
-        height: 250px;
-        width: 250px;
+        height: 230px;
+        width: 230px;
         margin: 5px;
         border-top: solid 0.8px rgb(176, 176, 176);
         border-left: solid 0.8px rgb(232, 232, 232);
