@@ -1,16 +1,30 @@
 .profile {
-  height: 1000px;
+  height: 1500px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: orangered;
   padding: 40px;
-  background-image: image-url("smoke.jpg");
+  background-image: image-url("profile.JPG");
   background-position: center;
   background-size: cover;
   &__title {
     height: 120px;
     text-shadow: 0 0 2px gray;
     display: flex;
-    font-size: 110px;
+    font-size: 120px;
     text-decoration: line-through;
+  }
+  &__text {
+    background-color: white;
+    background: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 2px gray;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    &__info {
+      margin-bottom: 20px;
+      span { font-size: 35px;}
+    }
+    &__content {
+    }
   }
 }
