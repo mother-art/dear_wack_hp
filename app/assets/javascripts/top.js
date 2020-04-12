@@ -1,8 +1,8 @@
 $(function() {
-  $(".menu__know").hover(function() {
-    $(".menu__know__list:not(:animated)", this).slideDown();
+  $(".menu__biography").hover(function() {
+    $(".menu__biography__list:not(:animated)", this).slideDown();
   }, function() {
-    $(".menu__know__list", this).slideUp();
+    $(".menu__biography__list", this).slideUp();
     });
   
   $(".menu__sns").hover(function() {
