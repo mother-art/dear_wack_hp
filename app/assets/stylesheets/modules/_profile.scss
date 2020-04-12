@@ -1,12 +1,21 @@
 .profile {
   height: 1500px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: orangered;
+  color: #ff4500;
   padding: 40px;
-  background-color: black;
-  background-image: image-url("profile.JPG");
-  background-position: center;
-  background-size: cover;
+  background-color: rgb(69, 69, 69);
+  animation-name: profile-page;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  @keyframes profile-page {
+    0% { opacity: 0;}
+    100% {
+      opacity: 1;
+      background-image: image-url("profile.JPG");
+      background-position: center;
+      background-size: cover;
+    }
+  }
   &__title {
     height: 120px;
     text-shadow: 0 0 2px gray;
