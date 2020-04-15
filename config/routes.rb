@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root "tops#index"
-  resources :tops do
+  root "topics#index"
+  resources :topics do
     collection do
-      get 'profile', to: 'tops#profile'
+      get 'profile', to: 'topics#profile'
     end
   end
 end
