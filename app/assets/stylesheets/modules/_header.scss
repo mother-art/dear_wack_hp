@@ -1,0 +1,23 @@
+.header {
+  height: 180px;
+  padding: 40px 0 0 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: rgba(40, 40, 40, 0.5);
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-name: header-smoke;
+  span {
+    color: orangered;
+    font-size: 20px;
+    text-shadow: 0 0 2px white;
+    margin-left: 20px;
+  }
+  a {
+    color: orangered;
+    text-decoration: none;
+    font-size: 80px;
+    font-weight: normal;
+    text-decoration: line-through;
+    text-shadow: 0 0 3px white;
+  }
+}

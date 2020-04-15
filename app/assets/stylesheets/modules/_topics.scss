@@ -23,6 +23,7 @@
     padding: 50px;
     text-shadow: 0 0 3px white;
     color: white;
+    a { color: white;}
     &__info {
       font-size: 13px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -220,5 +221,47 @@
       background-color: orangered;
     }
     &__submit:hover { box-shadow: 0 0 5px white;}
+  }
+}
+
+
+.topic-show {
+  height: calc(100vh + 350px);
+  color: orangered;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: topic-page;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  @keyframes topic-page {
+    0% {
+      background-image: image-url("82.jpg");
+      background-position: bottom;
+      background-size: cover;
+    }
+    100% {
+      background-image: image-url("8.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__title {
+    width: calc(100vw - 40px);
+    max-width: 950px;
+    font-size: 35px;
+    padding: 40px;
+    margin: 40px 30px 0 30px;
+    background: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 2px gray;
+  }
+  &__content {
+    height: calc(100% - 400px);
+    width: calc(100vw - 40px);
+    max-width: 950px;
+    font-size: 20px;
+    overflow: scroll;
+    padding: 20px 40px;
+    margin: 0 30px;
+    background: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 2px gray;
   }
 }

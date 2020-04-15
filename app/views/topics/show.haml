@@ -1,0 +1,7 @@
+.topic-show
+  = render 'layouts/header'
+  .topic-show__title
+    = @topic.title
+  .topic-show__content
+    = simple_format(@topic.content)
+= render 'layouts/footer'
