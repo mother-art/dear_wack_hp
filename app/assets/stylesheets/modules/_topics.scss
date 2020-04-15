@@ -188,3 +188,37 @@
     }
   }
 }
+
+
+
+.topics-new {
+  height: 100vh;
+  background-image: image-url("smoke.jpg");
+  background-position: center;
+  background-size: cover;
+  .new_topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      width: calc(100vw - 100px);
+      border: solid 2px orangered;
+      background-color: white;
+      margin: 50px 0 20px 0;
+    }
+    &__content {
+      height: 350px;
+      width: calc(100vw - 100px);
+      border: solid 2px orangered;
+      background-color: white;
+    }
+    &__submit {
+      width: calc(100vw - 200px);
+      padding: 5px;
+      margin: 30px;
+      border-radius: 15px;
+      background-color: orangered;
+    }
+    &__submit:hover { box-shadow: 0 0 5px white;}
+  }
+}

@@ -1,25 +1,27 @@
 .top_page
   .topic
-    .topic__info
-      2020/03/21
-      = link_to "#" do
-        .topic__title 新型コロナウイルスに伴うLIVE中止のお知らせ。
-    .topic__info
-      2020/03/24
-      = link_to "#" do
-        .topic__title TikTok開設。
-    .topic__info
-      2020/03/25
-      = link_to "#" do
-        .topic__title プロフィールを追加しました。
-    .topic__info 
-      2020/03/30
-      = link_to "#" do
-        .topic__title ホームページ訪問時のアニメーションを追加しました。
-    .topic__info
-      2020/04/10
-      = link_to "#" do
-        .topic__title TikTok毎日配信開始！！
+    - @topics.each.first(5) do |topic|
+      .topic__info
+        2020/03/21
+        = link_to "#" do
+          .topic__title
+            = topic.title
+      .topic__info
+        2020/03/24
+        = link_to "#" do
+          .topic__title TikTok開設。
+      .topic__info
+        2020/03/25
+        = link_to "#" do
+          .topic__title プロフィールを追加しました。
+      .topic__info 
+        2020/03/30
+        = link_to "#" do
+          .topic__title ホームページ訪問時のアニメーションを追加しました。
+      .topic__info
+        2020/04/10
+        = link_to "#" do
+          .topic__title TikTok毎日配信開始！！
   .title
     .title__dear-wack Dear Wack
     .title__official-website 拝啓、クソ野郎____。
