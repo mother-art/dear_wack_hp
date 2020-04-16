@@ -1,11 +1,21 @@
 .top_page
   .topic
-    - @topics.first(5).each do |topic|
-      .topic__info
-        = topic.created_at
-        = link_to topic_path(topic) do
-          .topic__title
-            = topic.title
+    - if user_signed_in?
+      - @topics.first(5).each do |topic|
+        .topic__info
+          = topic.created_at
+          = link_to topic_path(topic) do
+            .topic__title
+              = topic.title
+              = link_to edit_topic_path(topic) do
+                .topic-edit-btn 編集
+    - else
+      - @topics.first(5).each do |topic|
+        .topic__info
+          = topic.created_at
+          = link_to topic_path(topic) do
+            .topic__title
+              = topic.title
   .title
     .title__dear-wack Dear Wack
     .title__official-website 拝啓、クソ野郎____。
