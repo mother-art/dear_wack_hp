@@ -1,6 +1,8 @@
 .top_page
   .topic
     - if user_signed_in?
+      = link_to new_topic_path do
+        Topicを追加
       - @topics.first(5).each do |topic|
         .topic__info
           = topic.created_at

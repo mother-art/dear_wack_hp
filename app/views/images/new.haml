@@ -1,0 +1,8 @@
+- if user_signed_in?
+  .images-new
+    = form_for @image do |f|
+      = f.file_field :image
+      = f.submit "追加" 
+- else
+  %div{style: "color: red; font-size: 50px;"}
+    不正なアクセスです。
