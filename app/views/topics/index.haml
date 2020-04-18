@@ -18,6 +18,8 @@
           = link_to topic_path(topic) do
             .topic__title
               = topic.title
+              = link_to edit_topic_path(topic) do
+                .topic-edit-btn 編集
   .title
     .title__dear-wack Dear Wack
     .title__official-website 拝啓、クソ野郎____。
@@ -51,16 +53,14 @@
     .photos__title 
       Pictures
       %span{class: "fas fa-sort-down"}
+      - if user_signed_in?
+        = link_to new_image_path do
+          .add-photo 写真を追加
+      - else
     .photos__box
-      = image_tag "1.JPG", alt: "test", class: "photo"
-      = image_tag "2.JPG", alt: "test", class: "photo"
-      = image_tag "profile.JPG", alt: "test", class: "photo"
-    .photos__box
-      = image_tag "4.JPG", alt: "test", class: "photo"
-      = image_tag "5.JPG", alt: "test", class: "photo"
-      = image_tag "6.JPG", alt: "test", class: "photo"
-    .photos__box
-      = image_tag "7.JPG", alt: "test", class: "photo"
-      = image_tag "8.jpg", alt: "test", class: "photo"
-      = image_tag "9.JPG", alt: "test", class: "photo"
+      -@images.first(9).each do |photo|
+        = link_to image_path(photo) do
+          = image_tag photo.image.url, class: "photo", alt: "No image"
+      = link_to images_path do
+        More
 = render 'layouts/footer'
