@@ -56,7 +56,7 @@
           .add-photo 写真を追加
       - else
     .photos__box
-      -@images.first(9).each do |photo|
+      -@images.reverse_each.first(9).each do |photo|
         = link_to image_path(photo) do
           = image_tag photo.image.url, class: "photo", alt: "No image"
       = link_to images_path do
