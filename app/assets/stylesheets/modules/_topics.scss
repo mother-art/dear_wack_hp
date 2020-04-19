@@ -94,10 +94,11 @@
       &__title {
         @include display-center;
         @include menu-style;
+        @include background-smoke;
         cursor: pointer;
       }
       &__list {
-        margin: 2px 0;
+        @include background-smoke;
         @include menu-style;
         text-align: center;
         display: none;
@@ -111,10 +112,11 @@
       &__title {
         @include display-center;
         @include menu-style;
+        @include background-smoke;
         cursor: pointer;
       }
       &__list {
-        margin: 2px 0;
+        @include background-smoke;
         @include menu-style;
         text-align: center;
         display: none;
@@ -126,12 +128,13 @@
       height: 40px;
       width: 100%;
       &__title {
+        @include background-smoke;
         @include display-center;
         @include menu-style;
         cursor: pointer;
       }
       &__list {
-        margin: 2px 0;
+        @include background-smoke;
         @include menu-style;
         text-align: center;
         display: none;
@@ -143,12 +146,13 @@
       height: 40px;
       width: 100%;
       &__title {
+        @include background-smoke;
         @include display-center;
         @include menu-style;
         cursor: pointer;
       }
       &__list {
-        margin: 2px 0;
+        @include background-smoke;
         @include menu-style;
         text-align: center;
         display: none;

@@ -5,8 +5,14 @@
 }
 
 @mixin menu-style {
-  border: solid 2px orangered;
-  height: 40px;
+  border: solid 1px orangered;
+  height: 45px;
   width: 95%;
   font-weight: bold;
+}
+
+@mixin background-smoke {
+  background-image: image-url("smoke.jpg");
+  background-position: top;
+  background-size: cover;
 }
