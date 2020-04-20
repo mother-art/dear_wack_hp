@@ -11,6 +11,9 @@
               = topic.title
               = link_to edit_topic_path(topic) do
                 .topic-edit-btn 編集
+              = link_to topic_path(topic.id),method: :delete  do
+                .topic-delete-btn{style: "margin-left: 5px;"}
+                  削除
     - else
       - @topics.first(5).each do |topic|
         .topic__info
