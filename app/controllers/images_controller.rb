@@ -21,6 +21,15 @@ class ImagesController < ApplicationController
     @image = Image.find(params[:id])
   end
 
+  def destroy
+    image = Image.find(params[:id])
+    if image.destroy
+    redirect_to images_path
+    else
+    redirect_to root_path
+    end
+  end
+
   private
   def image_params
     params.require(:image).permit(:image).merge(user_id: current_user.id)

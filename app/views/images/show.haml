@@ -1,4 +1,7 @@
 = render 'layouts/header'
+- if user_signed_in?
+  = link_to image_path(@image.id),method: :delete  do
+    %i{class:'fas fa-trash-alt'}
 .image-show
   = image_tag @image.image.url, class: "photo", alt: "No image"
 = render 'layouts/footer'
