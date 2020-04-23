@@ -1,4 +1,21 @@
 $(function() {
+  const pickUpPhoto = (src)=> {
+    const html = `<div class="add-box">
+                    <div class="remove-btn">消</div>
+                    <img class="pick-photo" src="${src}" >
+                  </div>`;
+    return html;
+  }
+
+  $(".photo").click(function() {
+    console.log($(this).context.src);
+    const src = $(this).context.src;
+    $('.pick-phot').append(pickUpPhoto(src));
+  })
+  $(".remove-btn").click(function() {
+    $(".add-box").remove();
+  })
+
   $(".menu__biography").hover(function() {
     $(".menu__biography__list:not(:animated)", this).slideDown();
   }, function() {

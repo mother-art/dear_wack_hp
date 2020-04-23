@@ -298,3 +298,30 @@
     text-shadow: 0 0 2px gray;
   }
 }
+
+
+.add-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .remove-btn {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px gray;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .pick-photo {
+    height: 400px;
+    width: 400px;
+    
+  }
+}
