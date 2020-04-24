@@ -310,22 +310,23 @@
   background: rgba(255, 255, 255, 0.6);
   .remove-btn {
     @include display-center;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     position: fixed;
-    top: 15%;
-    left: 15%;
+    top: 100px;
+    left: 100px;
     transform: translate(-50%, -50%);
-    font-size: 22px;
+    font-size: 29px;
     text-align: center;
-    background-color: white;
+    background-color: black;
+    color: white;
     border: solid 1px gray;
     opacity: 0.9;
     cursor: pointer;
   }
   .pick-photo {
-    height: 600px;
-    width: 600px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
   }
   .pick-photo:hover {
     box-shadow: 0 0 4px black;
