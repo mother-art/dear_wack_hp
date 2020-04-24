@@ -24,23 +24,27 @@ $(function() {
     $(".menu__youtube__list", this).slideUp();
   });
 
-  const pickUpPhoto = (src)=> {
+  const pickUpPhoto = (src, num)=> {
     const html = `<div class="add-box">
-                    <div class="remove-btn">消</div>
-                    <img class="pick-photo" src="${src}" >
+                    <div class="remove-btn">閉</div>
+                    <a href="/images/${num}">
+                      <img class="pick-photo" src="${src}" >
+                    </a>
                   </div>`;
     return html;
   }
 
   $(".photo").click(function() {
-    console.log($(this).context.src);
     const src = $(this).context.src;
-    $('.pick-phot').append(pickUpPhoto(src));
+    const num = $(this).data('index');
+    $('.pick-phot').append(pickUpPhoto(src, num));
   });
 });
 
 $(document).on('click',function(e) {
   $(".remove-btn").click(function() {
     $(".add-box").remove();
+  })
+  $(".add-box").click(function() {
   })
 });

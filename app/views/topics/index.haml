@@ -60,8 +60,7 @@
       - else
     .photos__box
       -@images.reverse_each.first(9).each do |photo|
-        -# = link_to image_path(photo) do
-        = image_tag photo.image.url, class: "photo", alt: "No image"
+        = image_tag photo.image.url, class: "photo", alt: "No image", data: {index: (photo.id)}
       = link_to images_path do
         %p More
 

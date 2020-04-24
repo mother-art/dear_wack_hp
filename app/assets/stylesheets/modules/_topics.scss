@@ -301,27 +301,34 @@
 
 
 .add-box {
+  @include display-center;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
   .remove-btn {
-    height: 30px;
-    width: 30px;
+    @include display-center;
+    height: 60px;
+    width: 60px;
     position: fixed;
-    top: 5%;
-    left: 5%;
+    top: 15%;
+    left: 15%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     background-color: white;
     border: solid 1px gray;
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: pointer;
   }
   .pick-photo {
-    height: 400px;
-    width: 400px;
-    
+    height: 600px;
+    width: 600px;
+  }
+  .pick-photo:hover {
+    box-shadow: 0 0 4px black;
+    transition: all 300ms 0s ease;
   }
 }
