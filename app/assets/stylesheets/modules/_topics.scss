@@ -1,5 +1,4 @@
 .top_page {
-  // height: 2000px;
   background-color: black;
   color: orangered;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -20,6 +19,13 @@
     width:100%;
     max-width: 100%;
     height: auto;
+    animation-name: top-image;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    @keyframes top-image {
+      0% { opacity: 0;}
+      100% { opacity: 0.8;}
+    }
   }
   .topic {
     height: 400px;
