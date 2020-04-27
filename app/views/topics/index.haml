@@ -1,4 +1,8 @@
 .top_page
+  = image_tag "IMG_1647_Fotor.jpg", class: "top-image"
+  .title
+    .title__dear-wack Dear Wack
+    .title__official-website 拝啓、クソ野郎____。
   .topic
     - if user_signed_in?
       = link_to new_topic_path do
@@ -21,9 +25,6 @@
           = link_to topic_path(topic) do
             .topic__title
               = topic.title
-  .title
-    .title__dear-wack Dear Wack
-    .title__official-website 拝啓、クソ野郎____。
   .menu
     .menu__biography
       .menu__biography__title Biography
